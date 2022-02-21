@@ -1,0 +1,53 @@
+.mainForm {
+  position: relative;
+  font-size: 2rem;
+  background-color: #fff;
+  // border: 2px solid blueviolet;
+  padding: 2rem 5rem;
+  min-height: 500px;
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+  // transform: skewY(-7deg);
+  clip-path: polygon(0 25vh, 100% 0, 100% 75vh, 0 100%);
+}
+.formDiv {
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  // transform: skewY(7deg);
+  & > * {
+    margin-bottom: 1rem;
+  }
+}
+.formHeading {
+  // transform: skewY(7deg);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  display: inline;
+
+  background-image: linear-gradient(to right bottom, #1a1a2e, #0f3460);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    // text-shadow: 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
+  }
+}
+label {
+  padding-right: 3rem;
+}
+.vedioForm {
+  position: absolute;
+
+  z-index: -1;
+  opacity: 0.5;
+}
+video {
+  /* override other styles to make responsive */
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
