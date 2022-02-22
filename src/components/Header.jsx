@@ -2,7 +2,7 @@ import React from "react";
 import image from "../image/my-photo.jpeg";
 const Header = () => {
   return (
-    <div className="mainHeader">
+    <div className="mainHeader" id="main">
       <div className="aboutMe equal">
         <div className="details">
           <h1 className="headingLine">Hi, I'm Bishal Karki</h1>

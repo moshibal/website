@@ -1,7 +1,7 @@
 import React from "react";
 const Main = () => {
   return (
-    <div className="mainMain">
+    <div className="mainMain" id="skill">
       <h2 className="heading-skills">my Full Stack Developer skills</h2>
       <main className="skillMain">
         <section className="section1">
