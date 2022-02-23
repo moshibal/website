@@ -32,7 +32,7 @@ const Project = () => {
       {projects.map((project) => (
         <div className="project-first">
           <div className="first-information">
-            <h3>
+            <h3 className="project-button">
               <a href="#d">{project.appname}</a>
             </h3>
 

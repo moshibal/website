@@ -5,53 +5,75 @@
   height: 90vh;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  background-image: linear-gradient(to right bottom, #1a1a2e, #16213e);
+  // background-image: linear-gradient(to right bottom, #1a1a2e, #b7bed3);
+  background-image: linear-gradient(to right bottom, #1a1a2e, #b7bed3);
+  @include respond(tab-land) {
+    margin-bottom: 1rem;
+  }
 }
 
 .aboutMe {
   position: relative;
   min-width: 50%;
   text-align: center;
+  right: 4rem;
+  @include respond(phone) {
+    right: 30px;
+  }
+}
+.para-button {
+  margin-top: 3rem;
+  font-size: 1.5rem;
 }
 .imageDiv {
-  height: 90vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  height: 100%;
+  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 .myImge {
+  display: inline-block;
   max-width: 100%;
   max-height: 100%;
 
   object-fit: cover;
+  @include respond(tab-land) {
+    height: 90vh;
+  }
 }
 .details {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 40%;
   //   max-width: 30%;
   //   max-height: 30%;
+  @include respond(phone) {
+    top: 10%;
+    left: 20%;
+  }
 }
 .details-buttom {
   border: 1px solid black;
   text-decoration: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0.6rem;
   background-color: #28df99;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .details-buttom:hover {
+  box-shadow: 0 5px 10px rgba(248, 240, 240, 0.5);
   transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
 }
 .headingLine {
-  font-size: 3rem;
+  font-size: 3.5rem;
   animation-name: moveInRight;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-delay: 0.5s;
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
 }
 .paragraphLine {
-  font-size: 2rem;
+  font-size: 1.5rem;
   animation-name: moveInLeft;
   animation-duration: 3s;
   animation-iteration-count: 1;

@@ -1,11 +1,15 @@
 .mainMain {
-  height: 85vh;
+  height: fit-content;
   width: 100%;
   background-color: #fff;
   margin-top: -20vh;
-  padding: 10rem 0;
+  padding: 10rem 0 5rem 0;
   text-align: center;
   color: #fff;
+  margin-bottom: 2rem;
+  @include respond(tab-land) {
+    padding: 11rem 0 5rem 0;
+  }
 }
 .heading-skills {
   text-transform: uppercase;
@@ -29,8 +33,18 @@
   min-height: 22rem;
   display: flex;
   justify-content: space-between;
+  @include respond(tab-land) {
+    font-size: large;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 1rem;
+    > * {
+      flex-basis: 100%;
+    }
+  }
 }
 .listOfSkills > * {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -40,7 +54,7 @@
   // height: 40rem;
   width: 27%;
   // background-image: linear-gradient(to right bottom, #e14594, #7045af);
-  background-image: linear-gradient(to right bottom, #1a1a2e, #0f3460);
+  background-image: linear-gradient(to right bottom, #1a1a2e, #b7bed3);
   border-radius: 10px;
 
   transition: all 0.2s;
@@ -56,7 +70,7 @@
 .section2 {
   // height: 40rem;
   width: 27%;
-  background-image: linear-gradient(to right bottom, #1a1a2e, #0f3460);
+  background-image: linear-gradient(to right bottom, #1a1a2e, #b7bed3);
   transition: all 0.2s;
   border-radius: 10px;
 
@@ -72,7 +86,7 @@
 .section3 {
   // height: 40rem;
   width: 27%;
-  background-image: linear-gradient(to right bottom, #1a1a2e, #0f3460);
+  background-image: linear-gradient(to right bottom, #1a1a2e, #b7bed3);
   transition: all 0.2s;
   border-radius: 10px;
   &:hover {

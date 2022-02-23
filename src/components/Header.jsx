@@ -5,15 +5,19 @@ const Header = () => {
     <div className="mainHeader" id="main">
       <div className="aboutMe equal">
         <div className="details">
-          <h1 className="headingLine">Hi, I'm Bishal Karki</h1>
+          <h1 className="headingLine">Hi, I'm Bishal Karki,</h1>
           <p className="paragraphLine"> a passionate full-stack developer.</p>
-
-          <a
-            className="details-buttom"
-            href="https://www.linkedin.com/in/bishal-karki-240810142/"
-          >
-            Contact Me
-          </a>
+          <p className="para-button">
+            isJobAvailable &&{" "}
+            <span>
+              <a
+                className="details-buttom"
+                href="https://www.linkedin.com/in/bishal-karki-240810142/"
+              >
+                Contact Me
+              </a>
+            </span>
+          </p>
         </div>
       </div>
       <div className="imageDiv equal">

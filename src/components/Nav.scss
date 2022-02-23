@@ -1,5 +1,6 @@
 .mainNav {
-  background-image: linear-gradient(to right bottom, #1a1a2e, #0f3460);
+  background-image: linear-gradient(to bottom, #1a1a2e, #b7bed3);
+  // background-image: linear-gradient(to right bottom, #45459e, #071846);
   display: flex;
   justify-content: space-between;
   min-height: 50px;
@@ -21,4 +22,11 @@
 a {
   color: #fff;
   text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(248, 240, 240, 0.5);
+  transform: translateY(-3px);
+  transition: all 0.2s;
 }
