@@ -29,9 +29,12 @@
   height: fit-content;
 }
 .project-button:hover {
+  display: inline-block;
   transform: translateY(-3px);
   text-decoration: underline;
   transition: all 0.2s;
+  background-color: aqua;
+  border-radius: 5px;
 }
 .first-information {
   max-height: fit-content;

@@ -8,8 +8,8 @@ const Modal = (props) => {
       </div>
       <div className="model-textarea">
         <p className="first-para">
-          First, thank you for visiting this page. This shows that you want to
-          know more about me which I highly appreciate.
+          First of all, thank you for visiting this page. This shows that you
+          want to know more about me which I highly appreciate.
         </p>
         <p className="second-para">
           This is Bishal Karki from Nepal with a bachelor’s degree in

@@ -5,6 +5,7 @@ import image3 from "../image/nat-3-large.jpg";
 const projects = [
   {
     appname: "Natours App",
+    appLink: `https://natours-bishal.herokuapp.com/`,
     paragraph: `In this app, I have created natours web application using pug
 templete engine.With RESTful api, authorization and
 authentication,MongoDB Atlast for the database, express framework to
@@ -33,7 +34,7 @@ const Project = () => {
         <div className="project-first">
           <div className="first-information">
             <h3 className="project-button">
-              <a href="#d">{project.appname}</a>
+              <a href={project.appLink}>{project.appname}</a>
             </h3>
 
             <p>{project.paragraph}</p>
@@ -57,6 +58,9 @@ const Project = () => {
           </div>
         </div>
       ))}
+      <h3 className="project-button">
+        <a href="#more">More Projects</a>
+      </h3>
     </section>
   );
 };
