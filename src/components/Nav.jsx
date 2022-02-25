@@ -27,7 +27,11 @@ const Nav = () => {
           <a href="#1" onClick={ShowModel}>
             About Me
           </a>
-          <Modal isOpen={showModal} onRequestClose={() => setShowModel(false)}>
+          <Modal
+            isOpen={showModal}
+            onRequestClose={() => setShowModel(false)}
+            ariaHideApp={false}
+          >
             <CustomModal onShowModal={CloseModel} />
           </Modal>
         </li>

@@ -10,12 +10,10 @@ import Logo from "./image/logo.png";
 function App() {
   return (
     <div className="App" id="app">
-      {/* <div className="container"> */}
       <Nav />
       <Header />
       <Main />
       <Project />
-
       <Footer Img={Logo} />
     </div>
   );

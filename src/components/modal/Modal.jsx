@@ -4,7 +4,7 @@ const Modal = (props) => {
   return (
     <div className="modal-main">
       <div className="vedioFormModal">
-        <video src={Vedio} autoPlay={true} width="100%" muted loop />
+        <video src={Vedio} autoPlay={true} width="100%" />
       </div>
       <div className="model-textarea">
         <p className="first-para">
