@@ -10,6 +10,7 @@ const Nav = () => {
   const CloseModel = () => {
     setShowModel(false);
   };
+  console.log(document.querySelector(".mainNav"));
   return (
     <div className="mainNav">
       <div>

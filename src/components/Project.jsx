@@ -14,16 +14,6 @@ like, sendGrid for sending email, multer for image upload, Stripe
 for payment, and many more.`,
     images: [image1, image2, image3],
   },
-  {
-    appname: "Bankwest App",
-    paragraph: `In this app, I have created natours web application using pug
-templete engine.With RESTful api, authorization and
-authentication,MongoDB Atlast for the database, express framework to
-create the server. A lot of third-party packages are being used
-like, sendGrid for sending email, multer for image upload, Stripe
-for payment, and many more.`,
-    images: [image1, image2, image3],
-  },
 ];
 
 const Project = () => {
