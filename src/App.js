@@ -6,7 +6,7 @@ import Project from "./components/Project.jsx";
 
 import Footer from "./components/Footer.jsx";
 import Logo from "./image/logo.png";
-
+//comments
 function App() {
   return (
     <div className="App" id="app">
