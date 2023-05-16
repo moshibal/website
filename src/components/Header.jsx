@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../image/my-photo.jpeg";
+import image from "../image/myphoto.png";
 const Header = () => {
   return (
     <div className="mainHeader" id="main">

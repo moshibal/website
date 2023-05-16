@@ -1,9 +1,10 @@
 .mainNav {
+  padding: 1rem;
   background-image: linear-gradient(to bottom, #1a1a2e, #b7bed3);
   // background-image: linear-gradient(to right bottom, #45459e, #071846);
   display: flex;
   justify-content: space-between;
-  min-height: 50px;
+  height: 5rem;
   font-size: 2rem;
 }
 .unorderedList {

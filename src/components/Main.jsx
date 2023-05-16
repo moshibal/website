@@ -11,18 +11,16 @@ const Main = () => {
             <h3>CSS3</h3>
             <h3>Javascript</h3>
             <h3>UI/UX Design</h3>
-
-            <h3>The Unix Command Line</h3>
           </div>
         </section>
         <section className="section2">
           <h2>Back End languages</h2>
           <div className="listOfSkills">
-            <h3>APIs</h3>
+            <h3>The Unix Command Line</h3>
             <h3>Node.js</h3>
-
+            <h3>Python</h3>
             <h3>EJS,PUG</h3>
-            <h3>MongoDB,Mongoose</h3>
+            <h3>MongoDB,Mongoose,SQL</h3>
             <h3>Authentication & Security</h3>
             <h3>Git,Github and Version Control</h3>
           </div>
@@ -35,6 +33,7 @@ const Main = () => {
             <h3>Bootstrap</h3>
             <h3>Express.js</h3>
             <h3>Unit Testing </h3>
+            <h3>Intregration Testing</h3>
             <h3>Chrome DevTools </h3>
           </div>
         </section>
