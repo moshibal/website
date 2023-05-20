@@ -1,57 +1,64 @@
 import React from "react";
-import image1 from "../image/nat-1-large.jpg";
-import image2 from "../image/nat-2-large.jpg";
-import image3 from "../image/nat-3-large.jpg";
+import darwich1 from "../image/darwich1.png";
+import darwich2 from "../image/darwich2.png";
+import darwich3 from "../image/darwich3.png";
+import groove1 from "../image/groove1.png";
+import groove2 from "../image/groove2.png";
+import groove3 from "../image/groove3.png";
 const projects = [
   {
-    appname: "Natours App",
-    appLink: `https://natours-bishal.herokuapp.com/`,
-    paragraph: `In this app, I have created natours web application using pug
-templete engine.With RESTful api, authorization and
-authentication,MongoDB Atlast for the database, express framework to
-create the server. A lot of third-party packages are being used
-like, sendGrid for sending email, multer for image upload, Stripe
-for payment, and many more.`,
-    images: [image1, image2, image3],
+    appname: "Darwich Meats & Co.",
+    appLink: `https://darwichmeats.com/`,
+    paragraph: `E-commerce website using react in the frontend and node js in the backend hosted in AWS. `,
+
+    images: [darwich1, darwich2, darwich3],
+  },
+  {
+    appname: "GrooveandVibes Dance School",
+    appLink: `https://grooveandvibes.com.au/`,
+    paragraph: `Build with react using lastest css architecture and hosted in Netlify.`,
+
+    images: [groove1, groove2, groove3],
   },
 ];
 
 const Project = () => {
   return (
-    <section className="project" id="project">
-      <h3 className="project-heading">Some of my projects</h3>
-      {projects.map((project) => (
-        <div className="project-first">
-          <div className="first-information">
-            <h3 className="project-button">
-              <a href={project.appLink}>{project.appname}</a>
-            </h3>
+    <>
+      <h3 className="heading-skills project-heading ">Some of my projects</h3>
+      <section className="project" id="project">
+        {projects.map((project) => (
+          <div className="project-first">
+            <div className="first-information">
+              <div className="project-button">
+                <a href={project.appLink} target="_blank" rel="noreferrer">
+                  {project.appname}
+                </a>
+              </div>
 
-            <p>{project.paragraph}</p>
+              <p>{project.paragraph}</p>
+            </div>
+            <div className="first-pictures">
+              <img
+                src={project.images[0]}
+                alt={project.images[0]}
+                className="image image-1"
+              />
+              <img
+                src={project.images[1]}
+                alt={project.images[1]}
+                className="image image-2"
+              />
+              <img
+                src={project.images[2]}
+                alt={project.images[2]}
+                className="image image-3"
+              />
+            </div>
           </div>
-          <div className="first-pictures">
-            <img
-              src={project.images[0]}
-              alt="natour"
-              className="image image-1"
-            />
-            <img
-              src={project.images[1]}
-              alt="natour"
-              className="image image-2"
-            />
-            <img
-              src={project.images[2]}
-              alt="natour"
-              className="image image-3"
-            />
-          </div>
-        </div>
-      ))}
-      <h3 className="project-button">
-        <a href="#more">More Projects</a>
-      </h3>
-    </section>
+        ))}
+      </section>
+    </>
   );
 };
 export default Project;

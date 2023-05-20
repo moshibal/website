@@ -1,47 +1,44 @@
 .project {
   margin-top: -4rem;
-  text-align: center;
+  // text-align: center;
   padding: 0 0 5rem 0;
   min-height: 100px;
   min-width: 100%;
   background-image: linear-gradient(to right bottom, #1a1a2e, #b7bed3);
 }
 .project-heading {
-  display: inline-block;
-  margin-bottom: 3rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-
-  letter-spacing: 0.2rem;
-  transition: all 0.2s;
-  &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    // text-shadow: 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
-  }
+  display: block;
+  margin-bottom: 5rem;
+  text-align: center !important;
 }
 .project-first {
+  height: 15rem;
   padding: 2rem 0;
-
   display: flex;
   justify-content: space-between;
 
-  height: fit-content;
+  margin-bottom: 3rem;
+}
+.project-button {
+  font-size: 1.5rem;
 }
 .project-button:hover {
   display: inline-block;
   transform: translateY(-3px);
-  text-decoration: underline;
   transition: all 0.2s;
   background-color: aqua;
   border-radius: 5px;
 }
 .first-information {
-  max-height: fit-content;
+  margin-left: 1rem;
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   color: aliceblue;
   font-size: 1rem;
 }
+
 /* css for image div */
 .first-pictures {
   width: 50%;
@@ -49,21 +46,26 @@
 }
 
 .image {
+  height: 12rem;
   max-width: 30%;
   position: absolute;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   z-index: 1;
   transition: all 0.2s;
-  outline-offset: 2rem;
+  outline-offset: 1rem;
+  @include respond(tab-land) {
+    height: 8rem;
+    width: 40%;
+  }
 }
 .image:hover {
   transform: scale(1.05);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   z-index: 2;
-  outline: 1.5rem solid rgba(14, 237, 44, 0.8);
+  outline: 0.5rem solid rgba(14, 237, 44, 0.8);
 }
 .image-1 {
-  left: 10rem;
+  left: 15rem;
   top: 2rem;
   right: 4rem;
   @include respond(tab-land) {
@@ -73,7 +75,7 @@
   }
 }
 .image-2 {
-  right: 13rem;
+  right: 15rem;
   top: 4rem;
   @include respond(tab-land) {
     left: 10rem;
@@ -82,6 +84,8 @@
   }
 }
 .image-3 {
+  right: 22rem;
+  top: 7rem;
   @include respond(tab-land) {
     left: 20%;
     top: 5rem;

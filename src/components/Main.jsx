@@ -1,4 +1,5 @@
 import React from "react";
+import "intersection-observer";
 const Main = () => {
   return (
     <div className="mainMain" id="skill">
@@ -11,6 +12,8 @@ const Main = () => {
             <h3>CSS3</h3>
             <h3>Javascript</h3>
             <h3>UI/UX Design</h3>
+            <h3>Chrome DevTools </h3>
+            <h3>Git,Github and Version Control</h3>
           </div>
         </section>
         <section className="section2">
@@ -22,7 +25,6 @@ const Main = () => {
             <h3>EJS,PUG</h3>
             <h3>MongoDB,Mongoose,SQL</h3>
             <h3>Authentication & Security</h3>
-            <h3>Git,Github and Version Control</h3>
           </div>
         </section>
         <section className="section3">
@@ -34,7 +36,6 @@ const Main = () => {
             <h3>Express.js</h3>
             <h3>Unit Testing </h3>
             <h3>Intregration Testing</h3>
-            <h3>Chrome DevTools </h3>
           </div>
         </section>
       </main>
